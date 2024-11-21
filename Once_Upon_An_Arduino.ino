@@ -84,6 +84,7 @@ void loop() {
 
   if (C == true) {
     if (bedState == HIGH) {
+      delay(1000);
       thirdservo.write(180);
       D = true;
     }
@@ -93,7 +94,7 @@ void loop() {
 
   if (D == true) {
     if (poisonState == HIGH) {
-      fourthservo.write(0);
+      fourthservo.write(90);
     }
   }
   prevPotionState = potionState;
